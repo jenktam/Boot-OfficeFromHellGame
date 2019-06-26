@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6200321509779532663}
   - component: {fileID: 6200321509779532662}
   - component: {fileID: 6200321509779532665}
+  - component: {fileID: 8652303736571892937}
   m_Layer: 0
   m_Name: Office Chair
   m_TagString: Untagged
@@ -106,3 +107,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3375218, y: 4.2010922}
   m_EdgeRadius: 0
+--- !u!114 &8652303736571892937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6200321509779532664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77795c33780486d47a49545303bc4a84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToCollideWith: 
+  destroyThisObject: 1
+  destroyOtherObject: 0

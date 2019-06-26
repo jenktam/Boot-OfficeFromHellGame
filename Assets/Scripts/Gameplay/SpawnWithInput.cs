@@ -26,7 +26,9 @@ public class SpawnWithInput : MonoBehaviour
 			else
 				offset.x = Random.Range(-spawnDistance, spawnDistance);
 
-			Instantiate(objectToSpawn, transform.position + offset, transform.rotation);
+			var go = Instantiate(objectToSpawn);
+			go.transform.position = transform.position;
+
 
 			amountSpawned++;
 		}

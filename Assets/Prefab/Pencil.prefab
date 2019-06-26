@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7216402877590667842}
   - component: {fileID: -8135049882132734638}
   - component: {fileID: 72095170}
+  - component: {fileID: 3315891829810328993}
   m_Layer: 0
   m_Name: Pencil
   m_TagString: Untagged
@@ -116,7 +117,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5345639450968322640}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b4170325775d1244ba7176f6f90a23f, type: 3}
   m_Name: 
@@ -134,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d07fa3d64bbeef428c245811f7b6a23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedPerAxis: {x: 2, y: 0}
+  speedPerAxis: {x: 0, y: -2}
   moveRelativeToRotation: 1
 --- !u!82 &72095170
 AudioSource:
@@ -232,3 +233,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!50 &3315891829810328993
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5345639450968322640}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
