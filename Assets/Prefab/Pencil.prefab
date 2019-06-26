@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -8135049882132734638}
   - component: {fileID: 72095170}
   - component: {fileID: 3315891829810328993}
+  - component: {fileID: -5229229968163909060}
   m_Layer: 0
   m_Name: Pencil
   m_TagString: Untagged
@@ -135,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d07fa3d64bbeef428c245811f7b6a23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedPerAxis: {x: 0, y: -2}
+  speedPerAxis: {x: 0, y: -10}
   moveRelativeToRotation: 1
 --- !u!82 &72095170
 AudioSource:
@@ -254,3 +255,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-5229229968163909060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5345639450968322640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77795c33780486d47a49545303bc4a84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToCollideWith: Enemy
+  destroyThisObject: 0
+  destroyOtherObject: 1
