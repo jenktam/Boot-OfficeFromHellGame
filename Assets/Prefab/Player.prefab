@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2200322030014590677}
   - component: {fileID: 2200322030014590666}
   - component: {fileID: -5751674635784353456}
+  - component: {fileID: 1574449867}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -217,3 +218,23 @@ MonoBehaviour:
   rightButton: 275
   upButton: 273
   downButton: 274
+--- !u!114 &1574449867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2200322030014590671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb470b8797b2e904eb904a5d4bc017d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  dieAtHealthZero: 0
+  healthText: {fileID: 0}
+  onHealthZero:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
