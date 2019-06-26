@@ -55,7 +55,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\MoveWithInput.cs" />
+     <Compile Include="Assets\Scripts\DoSomething\OnClick.cs" />
+     <Compile Include="Assets\Scripts\DoSomething\OnCollision.cs" />
+     <Compile Include="Assets\Scripts\DoSomething\OnDeath.cs" />
+     <Compile Include="Assets\Scripts\DoSomething\OnInput.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\CountdownTimer.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\DestroyOnCollision.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\DestroyWithInput.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\DisableOnStart.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\GameTimer.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\Health.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\Score.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\SpawnWithInput.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\TimedSpawner.cs" />
+     <Compile Include="Assets\Scripts\Movement\AutoMove.cs" />
+     <Compile Include="Assets\Scripts\Movement\AutoRotate.cs" />
+     <Compile Include="Assets\Scripts\Movement\AutoScale.cs" />
+     <Compile Include="Assets\Scripts\Movement\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Movement\MoveWithInput.cs" />
+     <Compile Include="Assets\Scripts\Movement\Patrol.cs" />
+     <Compile Include="Assets\Scripts\Movement\RotateTowardsMouse.cs" />
+     <Compile Include="Assets\Scripts\Movement\RotateWithInput.cs" />
+     <Compile Include="Assets\Scripts\Movement\ScaleWithInput.cs" />
      <None Include="Assets\Sprites\GameArt\TimeFantasy_Winter\readme.txt" />
      <None Include="Assets\Sprites\GameArt\topdown_shooter\characters\readme.txt" />
      <None Include="Assets\Sprites\GameArt\TimeFantasyArt\mv-time-fantasy\README_TimeFantasy.txt" />
