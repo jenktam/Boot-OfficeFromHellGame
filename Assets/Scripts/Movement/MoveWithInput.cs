@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class MoveWithInput : MonoBehaviour
 {
+    public int lastHorizontalMovement = 0;
 	public float speed = 5f;
 
 	public KeyCode leftButton = KeyCode.A;
@@ -18,11 +19,15 @@ public class MoveWithInput : MonoBehaviour
 		float amount = speed * Time.deltaTime;
 
 		if (Input.GetKey(leftButton))
-			transform.Translate(-amount, 0f, 0f, Space.World);
-
+        {
+            transform.Translate(-amount, 0f, 0f, Space.World);
+            lastHorizontalMovement = -1;
+        }
 		if (Input.GetKey(rightButton))
-			transform.Translate(amount, 0f, 0f, Space.World);
-
+        {
+            transform.Translate(amount, 0f, 0f, Space.World);
+            lastHorizontalMovement = 1;
+        }
 		if (Input.GetKey(upButton))
 			transform.Translate(0f, amount, 0f, Space.World);
 

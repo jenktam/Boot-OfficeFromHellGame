@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec91e7bc9e4e342718774b4ff0a7cf5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastHorizontalMovement: 0
   speed: 5
   leftButton: 97
   rightButton: 100
@@ -196,6 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec91e7bc9e4e342718774b4ff0a7cf5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastHorizontalMovement: 0
   speed: 5
   leftButton: 276
   rightButton: 275

@@ -27,6 +27,16 @@ public class SpawnWithInput : MonoBehaviour
 				offset.x = Random.Range(-spawnDistance, spawnDistance);
 
 			var go = Instantiate(objectToSpawn);
+            var pencil = go.GetComponent<AutoMove>();
+            if (transform.parent)
+            {
+                var player = transform.parent.GetComponent<MoveWithInput>();
+                if (player)
+                {
+                    pencil.direction = player.lastHorizontalMovement;
+                    pencil.isProjectile = true;
+                }
+            }
 			go.transform.position = transform.position;
 
 
