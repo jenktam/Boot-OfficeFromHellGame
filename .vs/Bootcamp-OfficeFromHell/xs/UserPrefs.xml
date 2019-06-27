@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{15B085B6-CF47-C17D-4DC6-854182CEA061}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Movement/MoveWithInput.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DoSomething/OnCollision.cs">
     <Files>
       <File FileName="Assets/Scripts/Movement/AutoMove.cs" Line="18" Column="9" />
-      <File FileName="Assets/Scripts/Movement/MoveWithInput.cs" Line="17" Column="16" />
+      <File FileName="Assets/Scripts/Movement/MoveWithInput.cs" Line="32" Column="35" />
       <File FileName="Assets/Scripts/Gameplay/SpawnWithInput.cs" Line="27" Column="11" />
       <File FileName="Assets/Scripts/Movement/AutoRotate.cs" Line="1" Column="1" />
       <File FileName="Assets/DestroyAfterTime.cs" Line="20" Column="6" />
@@ -10,6 +10,7 @@
       <File FileName="Assets/Scripts/Gameplay/CountdownTimer.cs" Line="17" Column="31" />
       <File FileName="Assets/Scripts/New or Changed/SceneLoader.cs" Line="15" Column="48" />
       <File FileName="Assets/Scripts/Gameplay/ExitGame.cs" Line="19" Column="10" />
+      <File FileName="Assets/Scripts/DoSomething/OnCollision.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,10 +18,11 @@
           <Node name="Bootcamp-OfficeFromHell" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Gameplay" expanded="True" />
-                <Node name="Movement" expanded="True">
-                  <Node name="MoveWithInput.cs" selected="True" />
+                <Node name="DoSomething" expanded="True">
+                  <Node name="OnCollision.cs" selected="True" />
                 </Node>
+                <Node name="Gameplay" expanded="True" />
+                <Node name="Movement" expanded="True" />
                 <Node name="New or Changed" expanded="True" />
               </Node>
             </Node>
