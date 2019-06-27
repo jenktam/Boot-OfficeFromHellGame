@@ -18,10 +18,9 @@ GameObject:
   - component: {fileID: -5751674635784353456}
   - component: {fileID: 1574449867}
   - component: {fileID: 643593143}
-  - component: {fileID: 2200322028490480647}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,6 +126,7 @@ MonoBehaviour:
   rightButton: 100
   upButton: 119
   downButton: 115
+  WalkingSound: {fileID: 0}
 --- !u!114 &2200322030014590676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,7 +152,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.000000059604645, y: -0.15296403}
+  m_Offset: {x: 0.000000059604645, y: -0.29230595}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -163,7 +163,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.63624215, y: 0.8607405}
+  m_Size: {x: 0.63624215, y: 0.58205664}
   m_EdgeRadius: 0
 --- !u!50 &2200322030014590666
 Rigidbody2D:
@@ -204,6 +204,7 @@ MonoBehaviour:
   rightButton: 275
   upButton: 273
   downButton: 274
+  WalkingSound: {fileID: 0}
 --- !u!114 &1574449867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,51 +217,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb470b8797b2e904eb904a5d4bc017d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 6
-  dieAtHealthZero: 1
-  maxHealth: 6
+  health: 5
+  dieAtHealthZero: 0
   healthText: {fileID: 0}
   onHealthZero:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1574449867}
-        m_MethodName: LoseHealth
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onHealthChange:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: setHearts
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1574449867}
-          m_ObjectArgumentAssemblyTypeName: Health, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!82 &643593143
@@ -274,10 +236,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e3a352f00052449e28c3af151819d4a2, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -359,45 +321,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2200322028490480647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2200322030014590671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ff135f4bd330de408dea1d1642a205b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tagToCollideWith: EnemyFire
-  onCollisionEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1574449867}
-        m_MethodName: LoseHealth
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onCollisionStay:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onCollisionExit:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1 &4653986749341525550
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,7 +330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8253690881979986884}
-  - component: {fileID: 798252557371249012}
+  - component: {fileID: 2200322028490480647}
   m_Layer: 0
   m_Name: PencilSpawnPoint
   m_TagString: Untagged
@@ -429,7 +352,7 @@ Transform:
   m_Father: {fileID: 2200322030014590664}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &798252557371249012
+--- !u!114 &2200322028490480647
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
