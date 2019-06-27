@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\DelayedOperations.cs" />
     <Compile Include="Assets\HealthConfiguration.cs" />
+    <Compile Include="Assets\HeartConfiguration.cs" />
     <Compile Include="Assets\Scripts\DestroyAfterTime.cs" />
     <Compile Include="Assets\Scripts\DoSomething\CloseGame.cs" />
     <Compile Include="Assets\Scripts\DoSomething\OnClick.cs" />

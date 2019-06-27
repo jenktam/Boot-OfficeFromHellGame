@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class HealthConfiguration : MonoBehaviour
 {
-    public List<GameObject> listOfHearts;
+    public List<HeartConfiguration> hearts;
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,9 +21,22 @@ public class HealthConfiguration : MonoBehaviour
 
     public void setHearts(Health health)
     {
-        for(int i = 0; i <= listOfHearts.Count; i++)
+
+        for (int j = 0; j < hearts.Count; j++)
         {
-            listOfHearts[i].SetActive((i < health.health));
+            Debug.Log($"health.health {health.health}");
+            Debug.Log($"j={j*2}");
+            if (health.health >= (j * 2)+2)
+            {
+                hearts[j].heartType = HeartType.fullHeart; 
+            } else if(health.health <= (j)*2)
+            {
+                hearts[j].heartType = HeartType.emptyHeart;
+            }
+            else
+            {
+                hearts[j].heartType = HeartType.halfHeart;
+            }
         }
     }
 }

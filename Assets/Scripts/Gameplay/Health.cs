@@ -6,9 +6,15 @@ public class Health : MonoBehaviour
 {
 	public int health = 3;
 	public bool dieAtHealthZero = false;
+    public int maxHealth;
 	public Text healthText;
 	public UnityEvent onHealthZero;
     public UnityEvent onHealthChange;
+
+    public void Start()
+    {
+        maxHealth = health;
+    }
 
     public void Update()
     {
