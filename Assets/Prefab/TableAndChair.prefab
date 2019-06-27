@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1689292798225510878}
   - component: {fileID: 1137037629505120661}
   - component: {fileID: 9018674424746704035}
-  - component: {fileID: 6890438802880389510}
   m_Layer: 0
   m_Name: TableAndChair
   m_TagString: Untagged
@@ -48,7 +47,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -4.425898, y: -5.2418466}
+  m_Offset: {x: -4.425898, y: -5.0214906}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -59,7 +58,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.016532, y: 4.4615965}
+  m_Size: {x: 4.016532, y: 1.7178373}
   m_EdgeRadius: 0
 --- !u!50 &9018674424746704035
 Rigidbody2D:
@@ -82,32 +81,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!61 &6890438802880389510
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3726575253375054970}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1001 &1363845152499067661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -249,6 +222,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7355767535411057229, guid: 56898a07126144429b768d13aabf4b0d,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.49083805
+      objectReference: {fileID: 0}
+    - target: {fileID: 7355767535411057229, guid: 56898a07126144429b768d13aabf4b0d,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.06178093
+      objectReference: {fileID: 0}
+    - target: {fileID: 7355767535411057229, guid: 56898a07126144429b768d13aabf4b0d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.0576687
+      objectReference: {fileID: 0}
+    - target: {fileID: 7355767535411057229, guid: 56898a07126144429b768d13aabf4b0d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.7240715
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56898a07126144429b768d13aabf4b0d, type: 3}
