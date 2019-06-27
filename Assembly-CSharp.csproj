@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\DelayedOperations.cs" />
+    <Compile Include="Assets\ExitGameClick.cs" />
     <Compile Include="Assets\HealthConfiguration.cs" />
     <Compile Include="Assets\HeartConfiguration.cs" />
     <Compile Include="Assets\Scripts\DestroyAfterTime.cs" />
@@ -71,7 +72,9 @@
     <Compile Include="Assets\Scripts\DoSomething\OnCollision.cs" />
     <Compile Include="Assets\Scripts\DoSomething\OnDeath.cs" />
     <Compile Include="Assets\Scripts\DoSomething\OnInput.cs" />
+    <Compile Include="Assets\Scripts\DoSomething\SpawnEveryFewSeconds.cs" />
     <Compile Include="Assets\Scripts\Gameplay\CountdownTimer.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\DestroyAfterTime.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DestroyOnCollision.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DestroyWithInput.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DisableOnStart.cs" />
