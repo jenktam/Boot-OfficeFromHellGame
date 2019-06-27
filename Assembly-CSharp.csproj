@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Gameplay\DestroyOnCollision.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DestroyWithInput.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DisableOnStart.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\ExitGame.cs" />
     <Compile Include="Assets\Scripts\Gameplay\GameTimer.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Health.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Score.cs" />
