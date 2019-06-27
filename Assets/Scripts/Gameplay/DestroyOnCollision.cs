@@ -27,4 +27,9 @@ public class DestroyOnCollision : MonoBehaviour
 		if (destroyThisObject == true)
 			Destroy(gameObject);
 	}
+
+    void Update()
+    {
+        
+    }
 }
