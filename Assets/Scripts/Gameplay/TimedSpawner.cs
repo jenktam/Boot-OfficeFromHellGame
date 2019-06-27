@@ -8,8 +8,11 @@ public class TimedSpawner : MonoBehaviour
 	public float spawnDistance = 0f;
 	public bool spawnAsACircle = true;
 
+    //GameObject myCountdown;
+
     void Start()
     {
+        //myCountdown = GameObject.Find("Countdown of Doom");
 		InvokeRepeating("Spawn", spawnCooldown, spawnCooldown);    
     }
 

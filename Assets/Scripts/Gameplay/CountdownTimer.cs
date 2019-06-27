@@ -13,6 +13,8 @@ public class CountdownTimer : MonoBehaviour
 	void Update()
 	{
 		countdownTime -= Time.deltaTime;
+        if (countdownTime < 0f)
+            countdownTime = 0;
 
 		if (timerText != null)
 			timerText.text = countdownTime.ToString("F0");
