@@ -62,7 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DestroyAfterTime.cs" />
+    <Compile Include="Assets\Scripts\DestroyAfterTime.cs" />
     <Compile Include="Assets\Scripts\DoSomething\CloseGame.cs" />
     <Compile Include="Assets\Scripts\DoSomething\OnClick.cs" />
     <Compile Include="Assets\Scripts\DoSomething\OnCollision.cs" />
@@ -100,7 +100,7 @@
     <Compile Include="Assets\Scripts\New or Changed\SimpleAnimationPlayer.cs" />
     <Compile Include="Assets\Scripts\New or Changed\StopAllCollision.cs" />
     <Compile Include="Assets\Scripts\New or Changed\StopAllTime.cs" />
-    <Compile Include="Assets\SpawnEveryFewSeconds.cs" />
+    <Compile Include="Assets\Scripts\SpawnEveryFewSeconds.cs" />
     <None Include="Assets\Sprites\GameArt\TimeFantasy_Winter\readme.txt" />
     <None Include="Assets\Sprites\GameArt\topdown_shooter\characters\readme.txt" />
     <None Include="Assets\Sprites\GameArt\TimeFantasyArt\mv-time-fantasy\README_TimeFantasy.txt" />
