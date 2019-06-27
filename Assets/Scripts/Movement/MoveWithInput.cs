@@ -13,8 +13,9 @@ public class MoveWithInput : MonoBehaviour
 	public KeyCode rightButton = KeyCode.D;
 	public KeyCode upButton = KeyCode.W;
 	public KeyCode downButton = KeyCode.S;
+    //public AudioSource WalkingSound;
 
-	void Update()
+    void Update()
     {
 		float amount = speed * Time.deltaTime;
 
@@ -22,18 +23,22 @@ public class MoveWithInput : MonoBehaviour
         {
             transform.Translate(-amount, 0f, 0f, Space.World);
             lastHorizontalMovement = -1;
+            //WalkingSound.Play();
         }
 		if (Input.GetKey(rightButton))
         {
             transform.Translate(amount, 0f, 0f, Space.World);
             lastHorizontalMovement = 1;
+            //WalkingSound.Play();
         }
 		if (Input.GetKey(upButton))
 			transform.Translate(0f, amount, 0f, Space.World);
+            //WalkingSound.Play();
 
-		if (Input.GetKey(downButton))
+        if (Input.GetKey(downButton))
 			transform.Translate(0f, -amount, 0f, Space.World);
-	}
+            //WalkingSound.Play();
+    }
 }
 
 

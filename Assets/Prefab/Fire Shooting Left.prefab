@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 266585670901224759}
   - component: {fileID: 266585670901224758}
   - component: {fileID: 266585670901224757}
+  - component: {fileID: 218170236}
+  - component: {fileID: 218170231}
   m_Layer: 0
   m_Name: Fire Shooting Left
   m_TagString: Untagged
@@ -93,6 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d07fa3d64bbeef428c245811f7b6a23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isProjectile: 0
+  direction: 1
   speedPerAxis: {x: -10, y: 0}
   moveRelativeToRotation: 1
 --- !u!50 &266585670901224757
@@ -116,3 +120,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &218170236
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266585670901224753}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.081686854, y: 0.011670113}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.96, y: 0.96}
+    newSize: {x: 0.96, y: 0.96}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4698789, y: 0.5398959}
+  m_EdgeRadius: 0
+--- !u!114 &218170231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266585670901224753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77795c33780486d47a49545303bc4a84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToCollideWith: Player
+  destroyThisObject: 1
+  destroyOtherObject: 0

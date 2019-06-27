@@ -126,6 +126,7 @@ MonoBehaviour:
   rightButton: 100
   upButton: 119
   downButton: 115
+  WalkingSound: {fileID: 0}
 --- !u!114 &2200322030014590676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,6 +204,7 @@ MonoBehaviour:
   rightButton: 275
   upButton: 273
   downButton: 274
+  WalkingSound: {fileID: 0}
 --- !u!114 &1574449867
 MonoBehaviour:
   m_ObjectHideFlags: 0
