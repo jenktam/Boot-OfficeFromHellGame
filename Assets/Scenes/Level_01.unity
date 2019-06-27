@@ -1147,6 +1147,7 @@ GameObject:
   - component: {fileID: 537736868}
   - component: {fileID: 537736867}
   - component: {fileID: 537736869}
+  - component: {fileID: 537736870}
   m_Layer: 0
   m_Name: ElevatorClosed
   m_TagString: Untagged
@@ -1226,15 +1227,15 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2b98e97d394214373b0a46e7332b2a59, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f6c5bf83991f34b8e94cf23889e09414, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.296
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 191
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1328,6 +1329,17 @@ MonoBehaviour:
   onCollisionEnter:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 537736865}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 537736867}
         m_MethodName: Play
         m_Mode: 1
@@ -1339,12 +1351,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 537736864}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 537736870}
+        m_MethodName: DelayedLoadScene
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 628532780}
+          m_ObjectArgumentAssemblyTypeName: SceneLoader, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1388,6 +1400,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.45874804, y: 0.6378435}
   m_EdgeRadius: 0
+--- !u!114 &537736870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537736864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d42c58792424ff0ae0fdf6c7651496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &573681990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1686,6 +1710,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 712849311}
+  - component: {fileID: 712849312}
   m_Layer: 5
   m_Name: Health
   m_TagString: Untagged
@@ -1715,6 +1740,22 @@ RectTransform:
   m_AnchoredPosition: {x: 158.1, y: -47.449}
   m_SizeDelta: {x: 316.2, y: 98.302}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &712849312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712849310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad61b6ecef3a24f8f9dbf7d001ec021a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listOfHearts:
+  - {fileID: 189326832}
+  - {fileID: 1477453579}
+  - {fileID: 1784618924}
 --- !u!1001 &715362419
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5397,6 +5438,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1574449867, guid: f870d9f4868904a4cbbd73165985fa57, type: 3}
+      propertyPath: onHealthChange.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574449867, guid: f870d9f4868904a4cbbd73165985fa57, type: 3}
       propertyPath: onHealthZero.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -5420,6 +5465,34 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 692820331}
+    - target: {fileID: 1574449867, guid: f870d9f4868904a4cbbd73165985fa57, type: 3}
+      propertyPath: onHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574449867, guid: f870d9f4868904a4cbbd73165985fa57, type: 3}
+      propertyPath: onHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574449867, guid: f870d9f4868904a4cbbd73165985fa57, type: 3}
+      propertyPath: onHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 712849312}
+    - target: {fileID: 1574449867, guid: f870d9f4868904a4cbbd73165985fa57, type: 3}
+      propertyPath: onHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: setHearts
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574449867, guid: f870d9f4868904a4cbbd73165985fa57, type: 3}
+      propertyPath: onHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Health, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574449867, guid: f870d9f4868904a4cbbd73165985fa57, type: 3}
+      propertyPath: onHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1574449867}
+    - target: {fileID: 1574449867, guid: f870d9f4868904a4cbbd73165985fa57, type: 3}
+      propertyPath: health
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2200322030014590664, guid: f870d9f4868904a4cbbd73165985fa57,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5778,6 +5851,16 @@ PrefabInstance:
     - target: {fileID: 3044906992317511758, guid: b4e6a558c62b64232ac691a9cdc956c4,
         type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044906992317511758, guid: b4e6a558c62b64232ac691a9cdc956c4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044906992317511758, guid: b4e6a558c62b64232ac691a9cdc956c4,
+        type: 3}
+      propertyPath: m_PlayOnAwake
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
