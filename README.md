@@ -4,9 +4,12 @@
 
 You are a demon with a desk job in hell. Tired of the 9-5 grind, your goal is to escape. The problem is, no one escapes hell. Everytime you die, you are sent back to your desk.
 
+
 ## Build
 * Unity 3D
 * C#
+* Piskel - Used to create 2D Pixel Art
+* Audacity - Used to create in-game music
 
 ## Where Can I Play?
 [Trailer](https://youtu.be/KBFwcw61R3YE)
